@@ -1,8 +1,0 @@
-{
-  "mappings": [
-    "/content/cognizantxwalk/:/"
-  ],
-  "includes": [
-    "/content/cognizantxwalk/"
-  ]
-}
