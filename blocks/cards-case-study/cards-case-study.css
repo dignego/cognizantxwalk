@@ -47,9 +47,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (width >= 600px) {
+  .cards-case-study > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cards-case-study > ul > li {
