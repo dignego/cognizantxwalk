@@ -43,17 +43,23 @@
   color: var(--link-color);
 }
 
+/* Know more links - plain text style, not buttons */
 .cards-news .cards-news-card-body p:last-child a {
-  color: var(--link-color);
+  color: var(--brand-navy, #0d2240);
   font-weight: 600;
+  font-size: var(--body-font-size-xs);
+  text-decoration: none;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-news .cards-news-card-body p:last-child a.button {
-  background-color: var(--brand-teal);
-  color: var(--brand-navy);
-  padding: 0.4em 1.2em;
+  background-color: transparent;
+  color: var(--brand-navy, #0d2240);
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin: 0;
   font-size: var(--body-font-size-xs);
-  border-radius: 2em;
 }
 
 .cards-news .cards-news-card-image {
@@ -64,7 +70,22 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: contain;
-  background-color: #f0f0f0;
+  background-color: #fff;
+}
+
+/* First card with logo - larger */
+.cards-news > ul > li:first-child .cards-news-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.cards-news > ul > li:first-child img {
+  aspect-ratio: unset;
+  max-height: 200px;
+  object-fit: contain;
 }
 
 @media (width >= 600px) {
@@ -74,9 +95,5 @@
 
   .cards-news > ul > li:first-child {
     grid-row: span 2;
-  }
-
-  .cards-news > ul > li:first-child img {
-    aspect-ratio: 4 / 3;
   }
 }
