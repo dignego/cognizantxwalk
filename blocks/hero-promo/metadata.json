@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-promo",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-09T11:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.cognizant.com/us/en",
+    "originPage": "Cognizant US homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "promotional-teaser",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + paragraph + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "full-width promotional teasers",
+      "content with background images",
+      "report or resource promotion sections"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "hero with multiple CTAs",
+      "hero without background image"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T11:20:00.000Z"
+  }
+}

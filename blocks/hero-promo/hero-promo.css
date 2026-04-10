@@ -1,0 +1,127 @@
+/* Hero Promo - full-width section with background image and overlay content */
+
+/* Section-level: make it full-width and position for background image */
+.hero-promo-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hero-promo-container > div {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-promo-container > .default-content-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-promo-container > .default-content-wrapper > p {
+  margin: 0;
+  line-height: 0;
+  height: 100%;
+}
+
+.hero-promo-container > .default-content-wrapper picture {
+  display: block;
+  height: 100%;
+}
+
+.hero-promo-container > .default-content-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-promo-container .hero-promo-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-promo {
+  position: relative;
+  padding: 0;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* First top-level div contains the empty column placeholder - hide it */
+.hero-promo > div:first-child {
+  display: none;
+}
+
+/* Second top-level div contains the actual content */
+.hero-promo > div:last-child {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  width: 100%;
+}
+
+/* The content div inside gets the dark overlay box */
+.hero-promo > div:last-child > div {
+  background-color: rgb(13 34 64 / 88%);
+  padding: 32px 40px;
+  max-width: 500px;
+  color: #fff;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.hero-promo p {
+  color: #fff;
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+  margin-top: 0.5em;
+}
+
+.hero-promo h5 {
+  color: var(--brand-teal, #00bfa5);
+  margin-top: 0;
+  font-size: var(--heading-font-size-s);
+}
+
+.hero-promo h5 a {
+  color: var(--brand-teal, #00bfa5);
+  text-decoration: none;
+}
+
+.hero-promo h5 a:hover {
+  text-decoration: underline;
+}
+
+.hero-promo a.button {
+  background-color: transparent;
+  color: var(--brand-teal, #00bfa5);
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 8px 0 0;
+}
+
+.hero-promo a.button:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+@media (width >= 900px) {
+  .hero-promo {
+    min-height: 500px;
+  }
+
+  .hero-promo > div:last-child {
+    padding: 80px 32px;
+  }
+}

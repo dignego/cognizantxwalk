@@ -1,0 +1,17 @@
+/* suppress nested section padding */
+.fragment-sticky-wrapper > .section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fragment-sticky-wrapper > .section:first-of-type {
+  padding-top: 0;
+}
+
+.fragment-sticky-wrapper > .section:last-of-type {
+  padding-bottom: 0;
+}
+
+.fragment-sticky.block {
+  display: none;
+}

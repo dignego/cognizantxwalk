@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-case-study",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-09T11:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.cognizant.com/us/en",
+    "originPage": "Cognizant US homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "case-study-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + label + heading + CTA",
+    "buttonCount": 1,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "case study showcases",
+      "image-heavy card grids",
+      "rollover/hover effect cards"
+    ],
+    "notSuitableFor": [
+      "text-only card lists",
+      "product feature cards",
+      "icon-based cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T11:20:00.000Z"
+  }
+}

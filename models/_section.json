@@ -33,6 +33,10 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
             }
           ]
         }
@@ -48,9 +52,16 @@
         "button",
         "title",
         "hero",
+        "hero-promo",
         "cards",
+        "cards-case-study",
+        "cards-news",
+        "carousel-banner",
         "columns",
-        "fragment"
+        "columns-cta",
+        "fragment",
+        "fragment-sticky",
+        "form"
       ]
     }
   ]

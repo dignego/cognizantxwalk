@@ -1,0 +1,128 @@
+/* Cards Case Study section - arrange multiple card blocks in grid */
+.cards-case-study-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin: 40px 0 !important;
+}
+
+.cards-case-study-container > .default-content-wrapper {
+  grid-column: 1 / -1;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+}
+
+@media (width >= 600px) {
+  .cards-case-study-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 24px;
+    max-width: 1248px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .cards-case-study-container > .default-content-wrapper {
+    padding: 0;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-case-study-container {
+    padding: 0 32px;
+    max-width: 1264px;
+  }
+}
+
+/* Individual card block wrapper */
+.cards-case-study-wrapper {
+  max-width: unset;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cards Case Study block - image card with text overlay */
+.cards-case-study > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cards-case-study > ul > li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--brand-dark-blue, #101b42);
+}
+
+/* First child div contains the image */
+.cards-case-study > ul > li > div:first-child {
+  position: absolute;
+  inset: 0;
+  line-height: 0;
+  z-index: 0;
+}
+
+.cards-case-study > ul > li > div:first-child p {
+  margin: 0;
+  height: 100%;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-case-study > ul > li > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: unset;
+}
+
+/* Second child div (or last) contains the text overlay */
+.cards-case-study > ul > li > div:last-child {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  background: linear-gradient(to top, rgb(0 0 0 / 80%) 0%, rgb(0 0 0 / 0%) 100%);
+  color: #fff;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Hide duplicate link text in the text body (second child div) */
+.cards-case-study > ul > li > div:last-child p {
+  display: none;
+}
+
+.cards-case-study .cards-case-study-card-body {
+  padding: 0;
+}
+
+.cards-case-study .cards-case-study-card-body h5 {
+  color: #fff;
+  margin: 0 0 8px;
+  font-size: var(--heading-font-size-xs);
+}
+
+.cards-case-study .cards-case-study-card-body h5 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cards-case-study .cards-case-study-card-body h5 a:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .cards-case-study > ul > li {
+    min-height: 320px;
+  }
+}

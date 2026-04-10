@@ -1,0 +1,68 @@
+/* Columns CTA - used in dark sections for career/promo content */
+.columns-cta-container {
+  max-width: unset !important;
+  padding: 0 !important;
+}
+
+.columns-cta-container .columns-cta-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.columns-cta > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.columns-cta img {
+  width: 100%;
+}
+
+.columns-cta > div > div {
+  order: 1;
+  padding: 20px 0;
+}
+
+.columns-cta > div > .columns-cta-img-col {
+  order: 0;
+}
+
+.columns-cta > div > .columns-cta-img-col img {
+  display: block;
+}
+
+.columns-cta h5 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.columns-cta a.button {
+  background-color: transparent;
+  color: var(--brand-teal, #00bfa5);
+  border: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.columns-cta a.button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .columns-cta > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 40px;
+    padding: 0 32px;
+  }
+
+  .columns-cta > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

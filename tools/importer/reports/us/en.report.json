@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.cognizant.com/us/en",
+  "path": "us/en",
+  "timestamp": "2026-04-09T11:33:12.854Z",
+  "title": "Intuition engineered—human insight, superhuman speed | Cognizant",
+  "template": "homepage",
+  "blocks": [
+    "carousel-banner",
+    "hero-promo",
+    "hero-promo",
+    "cards-case-study",
+    "cards-case-study",
+    "cards-case-study",
+    "cards-case-study",
+    "cards-news",
+    "columns-cta",
+    "fragment-sticky",
+    "form"
+  ]
+}

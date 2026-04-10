@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-09T11:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.cognizant.com/us/en",
+    "originPage": "Cognizant US homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "call-to-action",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "split layout CTAs",
+      "career or recruitment sections",
+      "image + text promotional banners"
+    ],
+    "notSuitableFor": [
+      "multi-column text layouts",
+      "comparison tables",
+      "three-column feature grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T11:20:00.000Z"
+  }
+}

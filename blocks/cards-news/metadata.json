@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-09T11:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.cognizant.com/us/en",
+    "originPage": "Cognizant US homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "news-feed",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + date + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news article listings",
+      "press release feeds",
+      "blog post grids with dates"
+    ],
+    "notSuitableFor": [
+      "product cards",
+      "team member cards",
+      "icon-based feature cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T11:20:00.000Z"
+  }
+}

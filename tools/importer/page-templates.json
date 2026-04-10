@@ -1,0 +1,167 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.cognizant.com/us/en"
+      ],
+      "description": "Cognizant US homepage with hero carousel, promotional teasers, case studies, news, and contact form",
+      "blocks": [
+        {
+          "name": "carousel-banner",
+          "instances": [
+            "div.section.banner-carousel-container div.banner-carousel-wrapper"
+          ]
+        },
+        {
+          "name": "hero-promo",
+          "instances": [
+            "div.section.rm-vertical-padding.background-fixed.mh-500 div.teaser-wrapper",
+            "div.section.rm-vertical-padding.background-fixed:not(.mh-500) div.teaser-wrapper"
+          ]
+        },
+        {
+          "name": "cards-case-study",
+          "instances": [
+            "div.section.rollover-teaser-container div.rollover-teaser-wrapper"
+          ]
+        },
+        {
+          "name": "cards-news",
+          "instances": [
+            "div.section.news-container div.news-wrapper"
+          ]
+        },
+        {
+          "name": "columns-cta",
+          "instances": [
+            "div.section.background-primary div.teaser-wrapper"
+          ]
+        },
+        {
+          "name": "fragment-sticky",
+          "instances": [
+            "div.section.fragment-container:first-of-type div.fragment-wrapper",
+            "div.section.fragment-container.form-container"
+          ]
+        },
+        {
+          "name": "form",
+          "instances": [
+            "div.section.form-container.p-0 div.form-wrapper"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-2",
+          "name": "Hero Carousel",
+          "selector": "div.section.banner-carousel-container",
+          "style": null,
+          "blocks": [
+            "carousel-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Company Tagline",
+          "selector": "div.section.background-white.text-container",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "div.section.background-white.text-container h4"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Expert Voices Teaser",
+          "selector": "div.section.rm-vertical-padding.background-fixed.bg-content-bottom.mh-500",
+          "style": null,
+          "blocks": [
+            "hero-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Case Studies",
+          "selector": "div.section.background-transparent.text-container.rollover-teaser-container",
+          "style": null,
+          "blocks": [
+            "cards-case-study"
+          ],
+          "defaultContent": [
+            "div.section.rollover-teaser-container div.text.block h3",
+            "div.section.rollover-teaser-container div.text.block p"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "AI-Empowered Customers Teaser",
+          "selector": "div.section.rm-vertical-padding.background-fixed.bg-content-bottom.position-relative.teaser-container:not(.mh-500)",
+          "style": null,
+          "blocks": [
+            "hero-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Sticky Contact Fragment",
+          "selector": "div.section.fragment-container:first-of-type",
+          "style": null,
+          "blocks": [
+            "fragment-sticky"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "Contact Form",
+          "selector": "div.section.form-container.p-0",
+          "style": null,
+          "blocks": [
+            "form"
+          ],
+          "defaultContent": [
+            "div.section.form-container.p-0 h3",
+            "div.section.form-container.p-0 > p"
+          ]
+        },
+        {
+          "id": "section-10",
+          "name": "News",
+          "selector": "div.section.rm-bottom-padding.news-container",
+          "style": null,
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": [
+            "div.section.news-container h3"
+          ]
+        },
+        {
+          "id": "section-11",
+          "name": "Career CTA",
+          "selector": "div.section.background-primary.rm-vertical-padding",
+          "style": "dark",
+          "blocks": [
+            "columns-cta"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-13",
+          "name": "Footer Form Fragment",
+          "selector": "div.section.fragment-container.form-container",
+          "style": null,
+          "blocks": [
+            "fragment-sticky"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

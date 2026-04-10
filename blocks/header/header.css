@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
 }
 
 header nav {
@@ -149,8 +150,19 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 180px;
   height: auto;
+}
+
+/* Fallback when logo image fails to load */
+header nav .nav-brand a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand-navy, #0d2240);
+  text-decoration: none;
+  letter-spacing: -0.5px;
 }
 
 /* sections */
@@ -269,4 +281,24 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  font-size: var(--body-font-size-xs);
+}
+
+header nav .nav-tools a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+header nav .nav-tools a:hover {
+  text-decoration: underline;
 }
