@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p141918-e1455278.adobeaemcloud.com/bin/franklin.delivery/dignego/cognizantxwalk/main"
+    url: "https://author-p140426-e1433687.adobeaemcloud.com/bin/franklin.delivery/dignego/cognizantxwalk/main"
     type: "markup"
     suffix: ".html"
